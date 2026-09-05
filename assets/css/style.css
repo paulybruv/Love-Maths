@@ -179,10 +179,15 @@ body {
 @media (max-width: 480px) {
     .controls-area {
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
     }
 
     .btn--big {
-        margin: 0 10px;
+        box-sizing: border-box;
+        margin: 0;
         padding: 5px;
         border: 5px solid;
         width: 50px;
@@ -239,10 +244,11 @@ body {
     .controls-area {
         width: 75%;
         margin: 10px auto;
+        gap: 4px;
     }
 
     .btn--big {
-        margin: 10px 10px;
+        margin: 10px 0;
     }
     .question-area {
         padding: 10px 0;
